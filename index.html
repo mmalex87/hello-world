@@ -1,18 +1,190 @@
 <!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ВДА «Открытие» — Сообщество поддержки</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html">
+          <img src="images/logo.png" alt="ВДА Открытие логотип" />
+          <span class="title">ВДА «Открытие»</span>
+        </a>
+        <button class="nav-toggle" aria-controls="primary-menu" aria-expanded="false">☰</button>
+        <nav id="primary-menu" class="menu" aria-expanded="false">
+          <a href="index.html">Главная</a>
+          <a href="what-is-aca.html">Что такое ВДА?</a>
+          <a href="newcomer.html">Новичку</a>
+          <a href="member.html">Участнику</a>
+          <a href="pr-committee.html">Комитет по связям с общественностью</a>
+          <a href="schedule.html">Расписание и контакты</a>
+          <div class="dropdown" aria-expanded="false">
+            <a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Блог</a>
+            <div class="dropdown-menu" role="menu">
+              <a href="stories.html">Истории выздоровления</a>
+              <a href="articles.html">Статьи про выздоровление</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
-</head>
+    <main>
+      <section class="hero">
+        <div class="container content">
+          <div>
+            <span class="tag">Поддержка • Анонимность • Сообщество</span>
+            <h1>Если вам больно из‑за прошлого — вы не одни</h1>
+            <p class="lead">ВДА — сообщество взаимопомощи для тех, кто вырос в алкогольных или иных дисфункциональных семьях. Здесь поддерживают и помогают меняться.</p>
+            <div class="cta">
+              <a class="btn btn-primary" href="schedule.html">Прийти на собрание</a>
+              <button class="btn btn-ghost" data-open="traits-modal">14 черт взрослого ребёнка</button>
+            </div>
+          </div>
+          <div class="card alt">
+            <h3>Что такое ВДА</h3>
+            <p class="muted">ВДА — это 12‑шаговая программа для тех, кто вырос в дисфункциональной семье. Здесь не осуждают и не лечат — поддерживают и делятся опытом.</p>
+          </div>
+        </div>
+      </section>
 
-<body>
+      <section class="section">
+        <div class="container grid-2">
+          <div class="card">
+            <div class="section-header">
+              <h2>Подходит ли мне программа?</h2>
+              <p class="muted">Если вы узнаёте себя — возможно, вы дома.</p>
+            </div>
+            <button class="btn btn-primary" data-open="traits-modal">Открыть 14 черт</button>
+          </div>
+          <div class="card">
+            <div class="section-header">
+              <h2>С чего начать выздоровление?</h2>
+              <p class="muted">Первый шаг — прийти и послушать. Это бесплатно и анонимно.</p>
+            </div>
+            <a class="btn btn-ghost" href="newcomer.html">Пошаговая инструкция</a>
+          </div>
+        </div>
+      </section>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Как проходят наши встречи</h2>
+            <p class="muted">Безопасная атмосфера, уважение границ, никакой критики и советов.</p>
+          </div>
+          <div class="card">
+            <p>Собрания группы ВДА «Открытие» — это безопасное пространство, где можно говорить о своём опыте без осуждения. Можно просто слушать, если страшно говорить в первый раз.</p>
+          </div>
+        </div>
+      </section>
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
+      <section class="section">
+        <div class="container grid-2">
+          <div class="card">
+            <div class="section-header">
+              <h2>Вопрос — ответ</h2>
+              <p class="muted">Коротко о главном.</p>
+            </div>
+            <div class="accordion">
+              <div class="item">
+                <header>
+                  <button class="toggle">Сколько это стоит?</button>
+                </header>
+                <div class="content" hidden>
+                  <p>Это бесплатно. ВДА — некоммерческое сообщество, работающее на добровольные пожертвования. Никто не обязывает жертвовать.</p>
+                </div>
+              </div>
+              <div class="item">
+                <header>
+                  <button class="toggle">Как попасть на собрание?</button>
+                </header>
+                <div class="content" hidden>
+                  <p>Просто приходите — без записи и взносов. Если страшно, можно в первый раз только послушать. Расписание и ссылки — на странице «Расписание и контакты».</p>
+                </div>
+              </div>
+              <div class="item">
+                <header>
+                  <button class="toggle">Что будет на первой встрече?</button>
+                </header>
+                <div class="content" hidden>
+                  <p>Приветствие, чтение материалов, знакомство с принципами. Говорить не обязательно — уважаем границы. Нет критики и советов.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="section-header">
+              <h2>Ближайшие собрания</h2>
+              <p class="muted">Сделайте первый шаг уже сегодня.</p>
+            </div>
+            <p>Понедельник и четверг, 19:00–20:30. Формат: смешанный (онлайн/очно).</p>
+            <a class="btn btn-primary" href="schedule.html">Перейти к расписанию</a>
+          </div>
+        </div>
+      </section>
 
-</body>
-</html>
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Истории участников</h2>
+            <p class="muted">Живые свидетельства выздоровления.</p>
+          </div>
+          <div class="carousel" data-carousel>
+            <div class="viewport">
+              <div class="slides">
+                <article class="slide">«Первое собрание стало поворотной точкой. Я не один.»</article>
+                <article class="slide">«Со временем появилось больше спокойствия и самоценности.»</article>
+                <article class="slide">«12 Шагов — это путь, а не гонка. Я иду своим темпом.»</article>
+              </div>
+            </div>
+            <div class="controls">
+              <button data-prev>← Назад</button>
+              <button data-next>Вперёд →</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>ВДА «Открытие». Анонимное сообщество взаимопомощи. Это бесплатно.</p>
+      </div>
+    </footer>
+
+    <!-- Traits Modal -->
+    <section class="modal" id="traits-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="traits-title">
+      <div class="modal-dialog">
+        <header class="modal-header">
+          <h3 id="traits-title">Список характерных особенностей — 14 черт</h3>
+          <button class="close-btn" data-close aria-label="Закрыть">×</button>
+        </header>
+        <div class="modal-body">
+          <ol>
+            <li>Мы оказались в изоляции и стали бояться людей и властных фигур.</li>
+            <li>Мы постоянно ищем одобрение и потеряли себя в этом поиске.</li>
+            <li>Мы боимся разгневанных людей и критики в свой адрес.</li>
+            <li>Мы стали алкоголиками или вступили в брак с алкоголиками…</li>
+            <li>Мы занимаем позицию жертвы…</li>
+            <li>Мы слишком ответственны…</li>
+            <li>Мы испытываем чувство вины, когда защищаем себя…</li>
+            <li>Мы стали зависимы от эмоционального возбуждения.</li>
+            <li>Мы путаем любовь с жалостью…</li>
+            <li>Мы запрятали вглубь себя чувства…</li>
+            <li>Мы сурово осуждаем себя…</li>
+            <li>Мы зависимые личности — панически боимся быть брошенными…</li>
+            <li>Алкоголизм — семейная болезнь; мы стали пара‑алкоголиками…</li>
+            <li>Пара‑алкоголики скорее реагируют, чем действуют.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <div class="modal-backdrop" hidden></div>
+
+    <script src="scripts.js"></script>
+  </body>
+  </html>
