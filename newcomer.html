@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Новичку — ВДА «Открытие»</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html">
+          <img src="images/logo.png" alt="ВДА Открытие логотип" />
+          <span class="title">ВДА «Открытие»</span>
+        </a>
+        <button class="nav-toggle" aria-controls="primary-menu" aria-expanded="false">☰</button>
+        <nav id="primary-menu" class="menu" aria-expanded="false">
+          <a href="index.html">Главная</a>
+          <a href="what-is-aca.html">Что такое ВДА?</a>
+          <a href="newcomer.html" aria-current="page">Новичку</a>
+          <a href="member.html">Участнику</a>
+          <a href="pr-committee.html">Комитет по связям с общественностью</a>
+          <a href="schedule.html">Расписание и контакты</a>
+          <div class="dropdown" aria-expanded="false">
+            <a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Блог</a>
+            <div class="dropdown-menu" role="menu">
+              <a href="stories.html">Истории выздоровления</a>
+              <a href="articles.html">Статьи про выздоровление</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1>С чего начать выздоровление?</h1>
+          <div class="card">
+            <ol>
+              <li>Прийти на ближайшее собрание — можно просто послушать.</li>
+              <li>Познакомиться с материалами ВДА и 12 Шагами.</li>
+              <li>Найти поддержку — телефонные звонки участникам между встречами.</li>
+              <li>Рассмотреть спонсорство для прохождения шагов.</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>25 вопросов: я — Взрослый ребёнок?</h2>
+          <div class="card">
+            <p class="muted">Ответьте на вопросы и прислушайтесь к внутреннему отклику. Если многое совпадает — приходите на собрание.</p>
+            <button class="btn btn-primary" data-open="questions-modal">Открыть список</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>ВДА «Открытие». Анонимное сообщество взаимопомощи.</p>
+      </div>
+    </footer>
+
+    <!-- 25 Questions Modal -->
+    <section class="modal" id="questions-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="questions-title">
+      <div class="modal-dialog">
+        <header class="modal-header">
+          <h3 id="questions-title">25 вопросов: я — Взрослый ребёнок?</h3>
+          <button class="close-btn" data-close aria-label="Закрыть">×</button>
+        </header>
+        <div class="modal-body">
+          <ol>
+            <li>Чувствую ли я себя ответственным за чувства других?</li>
+            <li>Склонен(а) ли я к угождению и страху отказа?</li>
+            <li>Трудно ли мне доверять людям и устанавливать границы?</li>
+            <li>Часто ли я чувствую стыд и вину без причины?</li>
+            <li>Есть ли у меня трудности в близких отношениях?</li>
+            <!-- ... остальные вопросы можно добавить позже ... -->
+          </ol>
+        </div>
+      </div>
+    </section>
+    <div class="modal-backdrop" hidden></div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
